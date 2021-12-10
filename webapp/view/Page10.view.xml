@@ -1,0 +1,101 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.sistemaDeArchivos.controller.Page10" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page showHeader="false" title="Responsive Page Title" showFooter="true" showNavButton="false">
+        <content>
+            <layout:BlockLayout background="Default" visible="true">
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="4" title="Resultados" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Image src="https://i.pinimg.com/originals/69/da/87/69da87d4f72acb42452a223fc27fb779.jpg" height="671.92px" width="1280px" visible="true" densityAware="false"/>
+                                    <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <layout:BlockLayout background="Default" visible="true">
+                                        <layout:content>
+                                            <layout:BlockLayoutRow scrollable="false">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="2" title="Paciente:" titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <Text text="Juanita Diaz Camargo" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                    <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content/>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutRow>
+                                        </layout:content>
+                                    </layout:BlockLayout>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <layout:BlockLayout background="Default" visible="true">
+                                        <layout:content>
+                                            <layout:BlockLayoutRow scrollable="false">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="2" title="3/12/21" titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                    <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <core:Icon src="sap-icon://nav-back" size="48px" height="48px" width="48px" visible="true" press="_onIconPress"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutRow>
+                                            <layout:BlockLayoutRow scrollable="false">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="2" title="Resultados" titleAlignment="Begin" titleLevel="H6">
+                                                        <layout:content>
+                                                            <Text text="Recuento de glóbulos rojos&#x9;4,35-5,65 mil millones de células/l* (4,35-5,65 mil millones de células/mcl**)" width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                            <Text text="Hemoglobina&#x9;13,2-16,6 gramos/dl*** (132-166 gramos/l)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                            <Text text="|| Hematocrito&#x9;38,3-48,6 por ciento" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutRow>
+                                        </layout:content>
+                                    </layout:BlockLayout>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="4" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <layout:BlockLayout background="Default" visible="true">
+                                        <layout:content>
+                                            <layout:BlockLayoutRow scrollable="false">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <Text text="Recuento de glóbulos blancos 3,4-9,6 mil millones de células/l (De 3400 a 9600 células/mcl)" width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                            <Text text="Recuento de plaquetas&#x9;: 135-317 mil millones/l (135.000 to 317.000/mcl)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutRow>
+                                        </layout:content>
+                                    </layout:BlockLayout>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

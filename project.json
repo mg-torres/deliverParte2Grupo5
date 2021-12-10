@@ -1,0 +1,100 @@
+{
+    "dataBinding": {
+        "/webapp/view/Page1.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page5.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page6.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page7.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page3.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page10.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page14.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page15.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page16.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page17.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page18.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page19.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet1.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet3.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet4.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet5.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet6.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet7.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Dialog1.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet8.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet9.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet10.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet11.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet12.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet13.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet14.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet15.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet16.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ActionSheet17.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

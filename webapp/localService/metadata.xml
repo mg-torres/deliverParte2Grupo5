@@ -1,0 +1,74 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="d5019a5b741979f0166c46ab" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="d5019a5b741979f0166c46ab_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="carpetaSet" EntityType="d5019a5b741979f0166c46ab.carpeta" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="carpetaOwner1Usuario" Association="d5019a5b741979f0166c46ab.carpetaOwner1Usuario" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="carpetaSet" Role="FromRole_carpetaOwner1Usuario"/>
+                    <End EntitySet="UsuarioSet" Role="ToRole_carpetaOwner1Usuario"/>
+                </AssociationSet>
+                <EntitySet Name="archivoSet" EntityType="d5019a5b741979f0166c46ab.archivo" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="archivoInsidecarpeta" Association="d5019a5b741979f0166c46ab.archivoInsidecarpeta" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="archivoSet" Role="FromRole_archivoInsidecarpeta"/>
+                    <End EntitySet="carpetaSet" Role="ToRole_archivoInsidecarpeta"/>
+                </AssociationSet>
+                <EntitySet Name="UsuarioSet" EntityType="d5019a5b741979f0166c46ab.Usuario" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="carpeta">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Titulo" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Titulo"/>
+                <Property Name="Departamento" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Departamento"/>
+                <Property Name="___FK_bc7ec95e76b7c805166c280c_00016" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_bc7ec95e76b7c805166c280c_00016"/>
+                <NavigationProperty Name="Owner1" Relationship="d5019a5b741979f0166c46ab.carpetaOwner1Usuario" FromRole="FromRole_carpetaOwner1Usuario" ToRole="ToRole_carpetaOwner1Usuario"/>
+            </EntityType>
+            <Association Name="carpetaOwner1Usuario">
+                <End Type="d5019a5b741979f0166c46ab.carpeta" Multiplicity="1" Role="FromRole_carpetaOwner1Usuario"/>
+                <End Type="d5019a5b741979f0166c46ab.Usuario" Multiplicity="1" Role="ToRole_carpetaOwner1Usuario"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_carpetaOwner1Usuario">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_carpetaOwner1Usuario">
+                        <PropertyRef Name="___FK_bc7ec95e76b7c805166c280c_00016"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="archivo">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="autor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="autor"/>
+                <Property Name="contenido" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="contenido"/>
+                <Property Name="tipo" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="tipo"/>
+                <Property Name="paciente1" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="paciente1"/>
+                <Property Name="cedula" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="cedula"/>
+                <Property Name="___FK_bc7ec95e76b7c805166c280c_00018" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_bc7ec95e76b7c805166c280c_00018"/>
+                <NavigationProperty Name="Inside" Relationship="d5019a5b741979f0166c46ab.archivoInsidecarpeta" FromRole="FromRole_archivoInsidecarpeta" ToRole="ToRole_archivoInsidecarpeta"/>
+            </EntityType>
+            <Association Name="archivoInsidecarpeta">
+                <End Type="d5019a5b741979f0166c46ab.archivo" Multiplicity="1" Role="FromRole_archivoInsidecarpeta"/>
+                <End Type="d5019a5b741979f0166c46ab.carpeta" Multiplicity="1" Role="ToRole_archivoInsidecarpeta"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_archivoInsidecarpeta">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_archivoInsidecarpeta">
+                        <PropertyRef Name="___FK_bc7ec95e76b7c805166c280c_00018"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="Usuario">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+                <Property Name="Cargo" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cargo"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
